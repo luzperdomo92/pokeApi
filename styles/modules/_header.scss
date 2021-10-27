@@ -1,0 +1,40 @@
+.header {
+  margin-top: .5rem;
+  @include to('medium') {
+    margin: 0rem;
+  }
+
+  &__content {
+    background: $dark-color;
+    padding: 5px 5px 5px 25px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    @include to('small') {
+      border-radius: 0px 0px 4px 4px;
+    }
+    @include to('small') {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    @include to('xs-small') {
+      padding-left: 5px;
+    }
+  }
+
+  &__title {
+    color: $light-color;
+    font-size: $line-height-large;
+    padding: 13px 0 14px;
+    @include to('xs-small') {
+      text-align: center;
+    }
+
+    &--dark {
+      color: $gray-color;
+    }
+  }
+}
+
+
+

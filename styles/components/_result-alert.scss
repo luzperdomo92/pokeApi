@@ -1,0 +1,15 @@
+.final {
+  display: none;
+  width: 100%;
+  margin: 1rem 0;
+
+  &__content {
+    padding: 1rem;
+    text-align: center;
+    background: $gray-color;
+  }
+  &__text {
+    color: $light-color;
+    font-size: $font-size-medium;
+  }
+}

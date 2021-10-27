@@ -1,0 +1,13 @@
+.grid-area {
+  padding: 20px 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    @include to('medium') {
+     justify-content: space-evenly;
+    }
+  }
+}

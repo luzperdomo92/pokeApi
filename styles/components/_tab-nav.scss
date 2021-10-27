@@ -1,0 +1,71 @@
+// ======================== aqui empiezan los diseños ================
+
+.tabs {
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  // $this: &;
+
+  &__list {
+    float: left;
+    display: block;
+
+    flex-basis: 33.3%;
+  }
+
+  &__input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+  }
+
+  &__label {
+    display: block;
+    // padding: 14px 16px;
+    padding: 14px 0px 20px 25px;
+    border-radius: 4px 4px 0px 0px;
+    cursor: pointer;
+    position: relative;
+    // top: 4px;
+    font-size: $font-size-small;
+    font-weight: $font-weight-normal;
+    background: $select-hover-color;
+    color: $blue-color;
+    @include to('small') {
+      padding-left: 1rem;
+    }
+    @include to('xs-small') {
+      &--strech {
+        padding-top: 3px;
+      }
+    }
+  }
+
+  &__content {
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    background: $light-color;
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  & [id^="tab"]:checked + label {
+    top: 0;
+    padding-top: 17px;
+    box-shadow: 0px 1px 0px #E2E2E4;
+    background: $light-color;
+    font-weight: $font-weight-semi-bold;
+    color: $dark-color;
+  }
+
+  & [id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block;
+  }
+}

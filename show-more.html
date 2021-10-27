@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>PokeDex</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a href="index.html">
+            <h2 class="header__title">Pokéd<span class="header__title header__title--dark">ex</span></h2>
+          </a>
+
+          <div class="search">
+            <input type="text" class="search__input" name="search" placeholder="Search by name...">
+            <div class="search__img"><i class="fas fa-search"></i></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="show-more">
+      <div class="container">
+
+        <div class="show-more__content">
+          <div class="show-more__card js-card">
+          </div>
+
+
+          <div class="show-more__description">
+            <ul class="tabs" role="tablist">
+
+              <li class="tabs__list">
+                <input class="tabs__input" type="radio" name="tabs" id="tab1" checked />
+                <label class="tabs__label" for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">Stats</label>
+                <div id="tab-content1" class="tabs__content" role="tabpanel" aria-labelledby="Stats" aria-hidden="false">
+                  <div class="show-more__details js-stats"></div>
+                </div>
+              </li>
+
+              <li class="tabs__list">
+                <input class="tabs__input" type="radio" name="tabs" id="tab2" />
+                <label class="tabs__label" for="tab2" role="tab" aria-selected="false" aria-controls="panel2" tabindex="0">Abilities</label>
+                <div id="tab-content2" class="tabs__content" role="tabpanel" aria-labelledby="Abilities" aria-hidden="true">
+                  <div class="show-more__details js-abilities">
+                  </div>
+                </div>
+              </li>
+
+              <li class="tabs__list">
+                <input class="tabs__input" type="radio" name="tabs" id="tab3" />
+                <label class="tabs__label tabs__label--strech" for="tab3" role="tab" aria-selected="false" aria-controls="panel3" tabindex="0">Type Effectiveness</label>
+                <div id="tab-content3" class="tabs__content" role="tabpanel" aria-labelledby="Effectiveness" aria-hidden="true">
+                  <div class="show-more__details">
+
+                    <div class="show-more__list">
+                      <div class="show-more__items">
+                        <p class="show-more__item">Normal: 100%</p>
+                        <p class="show-more__item">Fighting: 50%</p>
+                        <p class="show-more__item">Flying: 100%</p>
+                        <p class="show-more__item">Poison: 100% </p>
+                        <p class="show-more__item">Ground: 0% </p>
+                        <p class="show-more__item">Rock: 400%</p>
+                      </div>
+
+                      <div class="show-more__items">
+                        <p class="show-more__item">Bug: 25%</p>
+                        <p class="show-more__item">Ghost: 100%</p>
+                        <p class="show-more__item">Steel: 50%</p>
+                        <p class="show-more__item">Fire: 50%</p>
+                        <p class="show-more__item">Water: 200%</p>
+                        <p class="show-more__item">Grass: 25%</p>
+                      </div>
+
+                      <div class="show-more__items">
+                        <p class="show-more__item">Electric: 200%</p>
+                        <p class="show-more__item">Psychic: 100%</p>
+                        <p class="show-more__item">Ice: 100%</p>
+                        <p class="show-more__item">Dragon: 100%</p>
+                        <p class="show-more__item">Dark: 100%</p>
+                        <p class="show-more__item">Fairy: 50%</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/modules/show.js" type="module"></script>
+  </body>
+</html>

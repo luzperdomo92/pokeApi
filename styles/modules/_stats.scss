@@ -1,0 +1,92 @@
+.show-more {
+  margin: 30px 0 34px;
+
+  &__content {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    @include to('medium') {
+      flex-direction: column;
+      padding: 0px 5px;
+    }
+  }
+
+  &__card {
+    width: 221px;
+  }
+
+  &__description{
+    flex-basis: 75%;
+    // background: aqua;
+    @include to('small') {
+      width: 100%;;
+    }
+  }
+
+  &__details {
+    padding: 30px 25px;
+    font-size: $font-size-xs-small;
+    line-height: $line-height-extra-large;
+    @include to('medium') {
+      padding: 1rem;
+    }
+  }
+
+  &__stats {
+    margin: 0 .5rem;
+    display: flex;
+    @include to('medium') {
+      margin: 0;
+    }
+  }
+
+  &__progress {
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    display: flex;
+    width: 45%;
+  }
+
+  &__bar {
+    height: 10px;
+    background: $dark-color;
+    width: 0;
+  }
+
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+
+  }
+  &__title {
+    font-weight: $font-weight-semi-bold;
+    display: inline-block;
+
+    &--right {
+      width: 80px;
+      text-align: end;
+      padding-right: 0.5rem;
+    }
+
+    &--light-weight {
+      font-weight: $font-weight-light;
+    }
+  }
+
+
+  &__text {
+    font-weight: $font-weight-light;
+  }
+
+  &__value {
+    font-weight: $font-weight-light;
+
+    margin-left: 10px;
+  }
+
+  &__abilities {
+    margin-bottom: 1rem;
+  }
+}

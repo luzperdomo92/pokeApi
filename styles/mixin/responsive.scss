@@ -1,0 +1,19 @@
+// A map of breakpoints
+$breakpoints: (
+  xxs-small: 365px,
+  xs-small : 448px, // c440
+  small    : 576px, // c-  540px
+  medium   : 768px, //c-720px
+  large    : 960px,
+  x-large  : 1200px, // 1140px
+);
+
+@mixin to($device){
+
+  @if map-has-key($breakpoints, $device){
+
+    @media screen and (max-width:map-get($breakpoints, $device)){
+      @content;
+    }
+  }
+};
