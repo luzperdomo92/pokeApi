@@ -1,6 +1,7 @@
 ## **JavaScript    Test-exercise**
 
-This exercise implement HTML, SASS and JavaScript.
+This exercise implement HTML, SASS, vanilla JavaScript in reuqest to the API and rendew the
+result data in view with DOM manipulation.
 
 
 ### Getting started
